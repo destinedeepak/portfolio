@@ -1,0 +1,279 @@
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+
+    .brand {
+        font-size: 3.5rem;
+        color: white;
+    }
+
+    .navbar {
+
+        li {
+            margin-right: 40px;
+            a {
+               font-weight: 600;
+               color: $light-white;
+               font-size: 1.2rem;
+               position: relative;
+               text-align: center;
+
+               &:after {
+                   content: "";
+                   position: absolute;
+                   left: 0px;
+                   bottom: -5px;
+                   width: 0;
+                   height: 3px;
+                   background: linear-gradient($secondary-color);
+                   border-radius: 10px;
+                   transition: all .3s;
+               }
+               &:hover:after {
+                   width: 100%;
+               }
+            }
+        }
+    }
+}
+
+.hero {
+    padding-left: 8rem;
+    background: url("../media/header-bg.png") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+
+    article {
+        h5 {
+            font-style: italic;
+            color: white;
+            margin: {
+                top: 10px;
+                bottom: 40px;
+            }
+        }
+        button{
+            @extend .btn;
+            background: linear-gradient(to right,rgb(230, 100, 74), rgb(230, 52, 17));
+            color: white;
+            font-weight: 700;
+            letter-spacing: 2px;
+            position: relative;
+            transition: all .4s;
+            border: 0;
+
+            span {
+                position: relative;
+                z-index: 2;
+            }
+            
+            small {
+                position: absolute;
+                z-index: 2;
+                top: 42px;
+                right: 57px;
+                font-size: 1.8rem;
+            }
+            &:after {
+                position: absolute;
+                content: "";
+                right: 0;
+                height: 0;
+                width: 100%;
+                transition: all .4s;
+                background: $primary-color;
+            }
+    
+            &:hover {
+                color: #fff;
+            }
+    
+            &:hover:after{
+                height: 100%;
+            }
+            &:hover small {
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .social-nav {
+        padding-right: 1.2rem;
+        a {
+            color: $light-white;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            display: inline-block;
+        }
+    }
+}
+
+.contact {
+    background: url("../media/about-bg.png") no-repeat center center;
+    background-size:cover ;
+    border: 1px solid;
+    padding: {
+        top: 8rem;
+        right: 4.2rem;
+        left: 4.5rem
+    };
+
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    width: 42vw;
+    height: 90vh;
+
+    h6 {
+        font-family: 'Lora', serif;
+        font-size: .8rem;
+        margin: {
+            top: .5rem;
+            bottom: 1.2rem;
+        };
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: 'Lora', serif;
+    }
+
+    ul {
+        margin-top: 1.1rem;
+            a {
+                display: inline-block;
+                font-size: 4rem;
+                color: black;
+            }
+    }
+}
+
+
+    // background-color: #EBEBEB;
+    // height: 100vh;
+    // font-size: 13rem;
+    // font-weight: 900;
+    // color: rgba(189, 189, 189, 0.5);
+    // padding-left:15rem ;
+    // margin-top: 2rem;
+ 
+.contact-form{
+    color: #DADADA;
+    background: #1C1D26;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    width: 42vw;
+    height: 90vh;
+
+    padding: {
+        top: 8rem;
+        right: 4.2rem;
+        left: 4.5rem
+    };
+
+    .icon i{
+        transition: all .3s;
+        font-size: 2rem;
+        &:hover {
+            transform: rotate(180deg);
+             color: $secondary-color;
+        }
+    }
+
+    h6,label {
+        font-family: 'Lora', serif;
+        font-size: .8rem;
+        margin: {
+            top: .5rem;
+            bottom: 1.2rem;
+        };
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: 'Lora', serif;
+        
+    }
+
+    label,input,textarea {
+        width: 100%
+    }
+    
+    input,textarea {
+        padding: .4rem 0;
+        background:#1C1D26; 
+        border: 0;
+        font-size: 1.1rem;
+        color: $light-white;
+        font-family: 'Lora', serif;
+
+        &:focus {
+          outline: 0;
+          color: $light-white;
+          font-size: 1.1rem;
+        }
+
+    }
+
+    .form-control {
+        margin-bottom: 1rem;
+        small {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 3px;
+            border-radius: 10px;
+            width: 0;
+            background: linear-gradient(to right, $primary-color ,$secondary-color);
+            display: inline-block;
+            transition:all .3s;
+        }
+    
+        &:hover small{
+            width: 100%;
+        }
+    }
+
+    button {
+
+        @extend .btn;
+        background: linear-gradient(to right,rgb(230, 100, 74), rgb(230, 52, 17));
+        color: white;
+        font-weight: 700;
+        letter-spacing: 2px;
+        position: relative;
+        transition: all .4s;
+        border: 0;
+        width: 160px;
+
+        span {
+            position: relative;
+            z-index: 2;
+        }
+        &:after {
+            position: absolute;
+            content: "";
+            left: 0;
+            width: 0;
+            height: 100%;
+            transition: all .4s;
+            background: $primary-color;
+        }
+
+        &:hover {
+            color: #fff;
+            // transform: rotateX(180deg);
+        }
+
+        &:hover:after{
+            width:100%;
+            transform: rotateX(180deg);
+        }
+    }
+    
+}
+
+
+   
