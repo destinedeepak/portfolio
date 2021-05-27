@@ -110,9 +110,13 @@ header{
 }
 
 .contact {
+    position: absolute;
+    top: 5vh;
+    left: -42vw;
     background: url("../media/about-bg.png") no-repeat center center;
     background-size:cover ;
     border: 1px solid;
+    transition: all 1s;
     padding: {
         top: 8rem;
         right: 4.2rem;
@@ -148,23 +152,18 @@ header{
             }
     }
 }
-
-
-    // background-color: #EBEBEB;
-    // height: 100vh;
-    // font-size: 13rem;
-    // font-weight: 900;
-    // color: rgba(189, 189, 189, 0.5);
-    // padding-left:15rem ;
-    // margin-top: 2rem;
  
 .contact-form{
+    position: absolute;
+    bottom: 5vh;
+    right: -42vw;
     color: #DADADA;
     background: #1C1D26;
     word-spacing: 1px;
     letter-spacing: 1px;
     width: 42vw;
     height: 90vh;
+    transition: all 1s;
 
     padding: {
         top: 8rem;
@@ -172,7 +171,7 @@ header{
         left: 4.5rem
     };
 
-    .icon i{
+    .cross-icon i{
         transition: all .3s;
         font-size: 2rem;
         &:hover {
@@ -219,6 +218,7 @@ header{
 
     .form-control {
         margin-bottom: 1rem;
+        transition: all 1s;
         small {
             position: absolute;
             right: 0;
@@ -273,6 +273,15 @@ header{
         }
     }
     
+}
+.show-contact {
+    left: 8vw;
+    transition: all 1s;
+}
+
+.show-contact-form { 
+    right: 8vw;
+    transition: all 1s;
 }
 
 

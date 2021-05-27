@@ -369,9 +369,14 @@ header .navbar li a:hover:after {
 }
 
 .contact {
+  position: absolute;
+  top: 5vh;
+  left: -42vw;
   background: url("../media/about-bg.png") no-repeat center center;
   background-size: cover;
   border: 1px solid;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   padding-top: 8rem;
   padding-right: 4.2rem;
   padding-left: 4.5rem;
@@ -405,24 +410,29 @@ header .navbar li a:hover:after {
 }
 
 .contact-form {
+  position: absolute;
+  bottom: 5vh;
+  right: -42vw;
   color: #DADADA;
   background: #1C1D26;
   word-spacing: 1px;
   letter-spacing: 1px;
   width: 42vw;
   height: 90vh;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   padding-top: 8rem;
   padding-right: 4.2rem;
   padding-left: 4.5rem;
 }
 
-.contact-form .icon i {
+.contact-form .cross-icon i {
   -webkit-transition: all .3s;
   transition: all .3s;
   font-size: 2rem;
 }
 
-.contact-form .icon i:hover {
+.contact-form .cross-icon i:hover {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   color: #F05E47;
@@ -462,6 +472,8 @@ header .navbar li a:hover:after {
 
 .contact-form .form-control {
   margin-bottom: 1rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .contact-form .form-control small {
@@ -519,5 +531,17 @@ header .navbar li a:hover:after {
   width: 100%;
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
+}
+
+.show-contact {
+  left: 8vw;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.show-contact-form {
+  right: 8vw;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 /*# sourceMappingURL=style.css.map */
