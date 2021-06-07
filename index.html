@@ -11,16 +11,18 @@
     <title>Portfolio | Home</title>
 </head>
 <body>
-    <header class="container flex align-center">
-        <a href="#" class="brand"><i class="fab fa-dochub"></i></a>
-        <nav>
-            <ul class="flex navbar">
-                <li><a href="">Projects</a></li>
-                <li><a href="">Blogs</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href=""><i class="fas fa-adjust"></i></a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="container flex align-center">
+            <a href="#" class="brand"><i class="fab fa-dochub"></i></a>
+            <nav>
+                <ul class="flex navbar">
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="night-mode"><i class="fas fa-adjust"></i></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="hero flex align-center">
@@ -46,10 +48,14 @@
                 <p>I like to <small>resolve</small> design problems, <small>create</small> smart user interface and <small>imagine</small> useful interaction, developing rich web experiences & <small>web applications</small>.</p>
                 <p>When not working or futzing around with code, I study how to escape from University. Actually for hire.</p>
                 <ul class="flex">
-                    <li><a href="#"><i class="fab fa-html5"></i></a></li>
-                    <li><a href="#"><i class="fab fa-css3-alt"></i></a></li>
-                    <li><a href="#"><i class="fab fa-js"></i></a></li>
-                    <li><a href="#"><i class="fab fa-react"></i></a></li>
+                    <li>
+                        <a href="#" ><i class="fab fa-html5"></i><small>HTML</small></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-css3-alt"></i><small>CSS</small> </a>
+                    </li>
+                    <li><a href="#"><i class="fab fa-js"></i><small>JS</small> </a></li>
+                    <li><a href="#"><i class="fab fa-react"></i><small>React.js</small> </a></li>
                 </ul>
             </article>
             <div class="contact-form">
@@ -83,7 +89,50 @@
                 </form>
             </div>
         </section>
+
+        <section class="projects">
+            <div class="project-container">
+                <h2>My Projects</h2>
+                <article class="first">
+                    <h1>01</h1>
+                    <h2>FLexor</h2>
+                    <p>A Static web page done by HTML and CSS</p>
+                    <button target="_blank" class="about-btn" onclick="window.location.href='https://destinedeepak.github.io/checkpoint-4/'"><span>Click here to open Github Link <small><i class="fas fa-long-arrow-alt-right"></i></small></span></button>
+                </article>
+                <article class="second">
+                    <h1>02</h1>
+                    <h2>Training Studio</h2>
+                    <p>A Static web page done by HTML and CSS</p>
+                    <button target="_blank" class="about-btn" onclick="window.location.href='https://destinedeepak.github.io/TA-STYLE-tables-THaaak/block-BHaacf/index.html'"><span>Click here to open Github Link <small><i class="fas fa-long-arrow-alt-right"></i></small></span></button>
+                </article>
+                <article class="third">
+                    <h1>03</h1>
+                    <h2>TODO App</h2>
+                    <p>A Static web page done by HTML and CSS</p>
+                    <button target="_blank" class="about-btn" onclick="window.location.href='https://destinedeepak.github.io/TA-JS-DOM-and-Events-TJaaaf/block-BJaaev/code/index.html'"><span>Click here to open Github Link <small><i class="fas fa-long-arrow-alt-right"></i></small></span></button>
+                </article>
+                <article class="fourth">
+                    <h1>04</h1>
+                    <h2>FLexor</h2>
+                    <p>A Static web page done by HTML and CSS</p>
+                    <button target="_blank" class="about-btn" onclick="window.location.href='https://destinedeepak.github.io/checkpoint-4/'"><span>Click here to open Github Link <small><i class="fas fa-long-arrow-alt-right"></i></small></span></button>
+                </article>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="container">
+            <a href="#" class="footer-brand"><i class="fab fa-dochub"></i></a>
+            <nav>
+                <ul class="flex center">
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Linkedin</a></li>
+                    <li><a href="">Github</a></li>
+                    <li><a href="">Google+</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
  <script src="./script.js"></script>
 </body>
 </html>
